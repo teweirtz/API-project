@@ -4,33 +4,33 @@ import Cocktail from '../models/cocktails.js'
 const cocktailRouter = express.Router();
 
 cocktailRouter.get('/cocktail', async (req, res) => {
-    const Cocktail = await Cocktail.find({})
-    res.json(Cocktail)
+    const cocktail = await Cocktail.find({})
+    res.json(cocktail)
 })
 
 cocktailRouter.get('/cocktail/:id', async (req,res) => {
-    const Cocktail = await Cocktail.findById(req.params.id)
-    res.json(Cocktail)
+    const cocktail = await Cocktail.findById(req.params.id)
+    res.json(cocktail)
 })
 
 cocktailRouter.post('/cocktail', async (req,res) => {
-    const Cocktail = await Cocktail.create(req.body)
-    res.json(Cocktail)
+    const cocktail = await Cocktail.create(req.body)
+    res.json(cocktail)
 })
 
 cocktailRouter.put('/cocktail/:id', async (req,res) => {
-    const Cocktail = await Cocktail.findByIdAndUpdate(
+    const cocktail = await Cocktail.findByIdAndUpdate(
         req.params.id,
         { $set: req.body},
         {new: true}
         )
-        res.json(Cocktail)
+        res.json(cocktail)
     })
 
 cocktailRouter.delete('/cocktail/:id', (req,res) =>{
         Cocktail.findByIdAndDelete( {_id: req.params.id})
-            .then(Cocktail => {
-                res.json(Cocktail)
+            .then(cocktail => {
+                res.json(cocktail)
             }
         )
     })

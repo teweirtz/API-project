@@ -1,5 +1,5 @@
 import express from "express"
-import cocktailRouter from "../routes/cocktails.js"
+import cocktailRouter from "./routes/cocktails.js"
 const app = express();
 
 app.get('/', (req, res) => {
