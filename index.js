@@ -1,10 +1,12 @@
 import express from "express"
-import 
+import cocktailRouter from "../routes/cocktails.js"
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    res.send('Shaken, not stirred');
 });
+
+app.use('/', cocktailRouter)
 
 app.listen(3000, () => {
     console.log("app listening on port 3000")

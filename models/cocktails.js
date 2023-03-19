@@ -1,4 +1,4 @@
-import mongoose from '../connection.js'
+import mongoose from '../db/connection.js'
 
 const cocktailSchema = new mongoose.Schema({
     strDrink: String,
