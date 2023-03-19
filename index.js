@@ -2,6 +2,8 @@ import express from "express"
 import cocktailRouter from "./routes/cocktails.js"
 const app = express();
 
+app.use(express.json())
+
 app.get('/', (req, res) => {
     res.send('Shaken, not stirred');
 });
