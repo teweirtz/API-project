@@ -1,4 +1,6 @@
 # Cocktail API
+<img width="1437" alt="Screenshot 2023-03-20 at 4 25 37 PM" src="https://user-images.githubusercontent.com/111527159/226457923-4009c901-9640-4461-9ea5-6c134b43dbae.png">
+
 ## About
 Using data from a [cocktails and their respective ingredients dataset](https://www.kaggle.com/datasets/ai-first/cocktail-ingredients) I built out a simple REST API by converting the original dataset into a JSON file and seeding the data. It features a wide range of cocktail recipes with ingredients, measurements, and instructions.
 
@@ -30,12 +32,7 @@ $ node db/seed.js
 ``` 
 $ node index.js
 ```
-5. Open in web browser.
-    - > http://localhost:3000/
+5. Open in web browser: http://localhost:3000/
 
 ### Technology Used
--Javascript
--Express.js
--Mongoose
--MongoDB
--Node.js
+apiDoc, Express.js, Mongoose, MongoDB, Node.js
