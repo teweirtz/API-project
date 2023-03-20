@@ -51,6 +51,9 @@ cocktailRouter.get('/cocktail', async (req, res) => {
  * @api {get} /cocktail/:id Reads a specific cocktail from the database.
  * @apiName GetCocktail
  * @apiGroup Cocktail
+ * 
+ * @apiParam {Number} idDrink ID of the cocktail.
+ * 
  * @apiSuccess {String} strDrink Name of the cocktail.
  * @apiSuccess {Number} idDrink ID of the cocktail.
  * @apiSuccess {String} strAlcoholic If the cocktail is alcoholic or not.
@@ -139,6 +142,9 @@ cocktailRouter.post('/cocktail', async (req,res) => {
  * @api {put} /cocktail/:id Edits a cocktail in the database.
  * @apiName EditCocktail
  * @apiGroup Cocktail
+ * 
+ * @apiParam {Number} idDrink ID of the cocktail.
+ * 
  * @apiSuccess {String} strDrink Name of the cocktail.
  * @apiSuccess {Number} idDrink ID of the cocktail.
  * @apiSuccess {String} strAlcoholic If the cocktail is alcoholic or not.
@@ -187,6 +193,9 @@ cocktailRouter.put('/cocktail/:id', async (req,res) => {
  * @api {deletes} /cocktail/:id Removes a cocktail in the database.
  * @apiName DeleteCocktail
  * @apiGroup Cocktail
+ * 
+ * @apiParam {Number} idDrink ID of the cocktail.
+ * 
  * @apiSuccess {String} strDrink Name of the cocktail.
  * @apiSuccess {Number} idDrink ID of the cocktail.
  * @apiSuccess {String} strAlcoholic If the cocktail is alcoholic or not.
